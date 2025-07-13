@@ -18,7 +18,6 @@ function salvarContribuicoes(dados) {
   fs.writeFileSync(FILE, JSON.stringify(dados, null, 2));
 }
 
-// Simula recebimento do webhook do PicPay para confirmar pagamento
 app.post("/notificacao-picpay", (req, res) => {
   const { nome, musica, valor, status } = req.body;
 
@@ -33,7 +32,6 @@ app.post("/notificacao-picpay", (req, res) => {
   res.status(400).json({ error: "Dados inválidos" });
 });
 
-// Retorna ranking ordenado do maior para menor valor
 app.get("/ranking", (req, res) => {
   const dados = carregarContribuicoes();
   dados.sort((a, b) => b.valor - a.valor);

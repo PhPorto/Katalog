@@ -1,11 +1,9 @@
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Variáveis de tema */
 :root {
   --text-color: white;
   --bg-color: #121212;
@@ -40,7 +38,6 @@
   --text-shadow-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Corpo e fonte */
 body {
   background: var(--bg-url) no-repeat top center/cover;
   background-color: var(--bg-color);
@@ -49,7 +46,6 @@ body {
   color: var(--text-color);
 }
 
-/* Container principal */
 #container {
   width: 100%;
   max-width: 588px;
@@ -57,7 +53,6 @@ body {
   padding: 0 24px;
 }
 
-/* Perfil */
 #profile {
   text-align: center;
   padding: 24px;
@@ -70,7 +65,6 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Glow e borda no modo escuro e claro */
 #profile img {
   border: 6px solid var(--border-color);
   box-shadow: 0 0 36px var(--glow-color);
@@ -91,7 +85,6 @@ body {
   }
 }
 
-/* Texto do perfil */
 #profile p {
   font-weight: 600;
   font-size: 20px;
@@ -108,7 +101,6 @@ body {
   cursor: pointer;
 }
 
-/* Switch modo claro/escuro */
 #switch {
   position: relative;
   width: 64px;
@@ -148,7 +140,6 @@ body {
   outline: 8px solid var(--highlight-color);
 }
 
-/* Container interno */
 .container {
   background: var(--card-color);
   padding: 40px;
@@ -160,7 +151,6 @@ body {
   transition: background-color 0.3s ease;
 }
 
-/* Título */
 h1 {
   font-size: 36px;
   font-weight: 800;
@@ -182,7 +172,6 @@ h1 {
   }
 }
 
-/* Botões */
 button {
   background-color: transparent;
   border: 2px solid var(--text-color);
@@ -200,7 +189,6 @@ button:hover {
   color: var(--bg-color);
 }
 
-/* Botão Ranking */
 #btnRanking {
   background: linear-gradient(135deg, #6a11cb, #2575fc);
   color: white;
@@ -230,7 +218,6 @@ button:hover {
   box-shadow: 0 4px 10px rgba(38, 115, 254, 0.5);
 }
 
-/* Botão Catálogo */
 #btnCatalogo {
   background: linear-gradient(135deg, #ff416c, #ff4b2b);
   color: white;
@@ -260,7 +247,6 @@ button:hover {
   box-shadow: 0 4px 10px rgba(255, 75, 43, 0.5);
 }
 
-/* Links sociais */
 #social-links {
   display: flex;
   justify-content: center;
@@ -282,7 +268,6 @@ button:hover {
   background: var(--highlight-color);
 }
 
-/* Footer */
 footer {
   color: var(--text-color);
   padding: 24px 0;
@@ -300,7 +285,6 @@ footer a:hover {
   color: #ffd700;
 }
 
-/* Animações do switch */
 @keyframes slide-in {
   from {
     left: 0;
@@ -319,7 +303,6 @@ footer a:hover {
   }
 }
 
-/* Responsividade */
 @media (min-width: 700px) {
   :root {
     --bg-url: url(./assets/bg.jpg);
@@ -340,7 +323,7 @@ footer a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px; /* espaço entre os botões */
+  gap: 16px; 
   margin-top: 20px;
 }
 

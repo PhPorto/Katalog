@@ -18,15 +18,13 @@ document.getElementById("pagamentoForm").addEventListener("submit", function (e)
     return;
   }
 
-  const usuarioPicPay = "SEU_USUARIO"; // substitua pelo seu usuário PicPay
+  const usuarioPicPay = "SEU_USUARIO";
 
   const valorFormatado = valor.toFixed(2);
   const url = `https://picpay.me/${usuarioPicPay}/${valorFormatado}`;
 
-  // Abre o pagamento PicPay numa nova aba
   window.open(url, "_blank");
 
-  // Simula confirmação instantânea enviando para backend (para teste local)
   fetch("http://localhost:3000/notificacao-picpay", {
     method: "POST",
     headers: {
@@ -36,7 +34,7 @@ document.getElementById("pagamentoForm").addEventListener("submit", function (e)
       nome,
       musica,
       valor,
-      status: "paid"  // simulando pagamento confirmado
+      status: "paid"  
     })
   })
     .then(() => {
