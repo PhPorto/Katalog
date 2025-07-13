@@ -1,0 +1,75 @@
+body {
+  background: url(./assets/bg.jpg) no-repeat center center/cover;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 30px;
+  border-radius: 16px;
+  max-width: 800px;
+  width: 90%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #4caf50;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+thead {
+  background: #1f1f1f;
+}
+
+thead th {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 2px solid #333;
+  font-size: 16px;
+  color: #ddd;
+}
+
+tbody td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #333;
+  font-size: 15px;
+  color: #eee;
+}
+
+tbody tr:hover {
+  background: rgba(76, 175, 80, 0.2);
+}
+
+#btnVoltar {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+#btnVoltar:hover {
+  background: linear-gradient(135deg, #5a0ecb, #1f64e0);
+}

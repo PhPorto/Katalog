@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pagamento com PicPay</title>
+  <link rel="stylesheet" href="catalogo.css" />
+</head>
+<body>
+  <div id="container">
+    <h1>Contribua com uma música</h1>
+    <form id="pagamentoForm">
+      <input type="text" id="nome" placeholder="Seu nome" required />
+      <select id="musica" required>
+        <option value="">Escolha uma música</option>
+        <option value="Música A">Música A</option>
+        <option value="Música B">Música B</option>
+        <option value="Música C">Música C</option>
+      </select>
+      <input type="number" id="valor" min="0.5" step="0.01" placeholder="Valor (R$)" required />
+      <button type="submit">Pagar com PicPay</button>
+    </form>
+    <p id="status"></p>
+    <button id="btnVoltar" onclick="window.location.href='index.html'">Voltar</button>
+  </div>
+
+  <script src="catalogo.js"></script>
+</body>
+</html>

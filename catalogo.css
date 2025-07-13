@@ -1,0 +1,81 @@
+body {
+  background: url(./assets/bg.jpg) no-repeat center center/cover;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 30px;
+  border-radius: 16px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+select,
+button {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+input,
+select {
+  background: #fff;
+  color: #000;
+}
+
+button[type="submit"] {
+  background-color: #00c86f;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #00b45d;
+}
+
+#btnVoltar {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+#btnVoltar:hover {
+  background: linear-gradient(135deg, #5a0ecb, #1f64e0);
+}
+
+#status {
+  font-weight: bold;
+  margin-bottom: 15px;
+  min-height: 20px;
+}
